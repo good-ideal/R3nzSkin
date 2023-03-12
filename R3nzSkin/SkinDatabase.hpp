@@ -37,55 +37,55 @@ public:
 	std::vector<std::pair<std::uint32_t, const char*>> wards_skins;
 	
 	std::vector<const char*> minions_skins{
-		"Minion", "Summer Minion",
-		"Project Minion", "Snowdown Minion",
-		"Draven Minion", "Star Guardian Minion",
-		"Arcade Minion", "Snowdown 2 Minion",
-		"Odyssey Minion", "Mouse Minion", "Arcane Minion"
+		__CN("默认小兵"), __CN("夏季迷你小兵"),
+		__CN("工程小兵"), __CN("冰雪节小兵"),
+		__CN("德莱文大头兵"), __CN("星之守护者小兵"),
+		__CN("电玩系列小兵"), __CN("冰雪节小兵[v2]"),
+		__CN("奥德赛小兵"), __CN("小老鼠小兵"), __CN("神秘的小兵")
 	};
 
 	std::vector<const char*> turret_skins{
-		"Default Order Turret", "Default Chaos Turret",
-		"Snow Order Turret", "Snow Chaos Turret",
-		"Twisted Treeline Order Turret", "Twisted Treeline Chaos Turret",
-		"URF Order Turret", "URF Chaos Turret",
-		"Arcade Turret",
-		"Temple of Lily and Lotus Turret",
-		"Arcane Order Turret", "Arcane Chaos Turret",
-		"Butcher's Bridge Order Turret", "Butcher's Bridge Chaos Turret",
-		"Howling Abyss Order Turret", "Howling Abyss Chaos Turret"
+		__CN("默认防御塔[v1]"), __CN("默认防御塔[v2]"),
+		__CN("冰雪节防御塔[v1]"), __CN("冰雪节防御塔[v2]"),
+		__CN("扭曲丛林防御塔[v1]"), __CN("扭曲丛林防御塔[v2]"),
+		__CN("无限火力防御塔[v1]"), __CN("无限火力防御塔[v2]"),
+		__CN("电玩系列防御塔"),
+		__CN("百合莲花防御塔"),
+		__CN("奥术防御塔[亮色]"), __CN("奥术防御塔[原色]"),
+		__CN("屠夫桥防御塔[v1]"), __CN("屠夫桥防御塔[v2]"),
+		__CN("嚎哭深渊防御塔[v1]"), __CN("嚎哭深渊防御塔[v2]")
 	};
 
 	std::vector<jungle_mob_skin_info> jungle_mobs_skins{
 		{
-			"Baron",
+			__CN("男爵皮肤"),
 			{ FNV("SRU_Baron") },
-			{ "Baron", "Snowdown Baron", "Championship Baron", "Lunar Revel Baron", "MSI Baron", "Odyssey Baron", "Championship Birthday Baron", "Ruined King Baron" }
+			{ __CN("Baron[默认]"), __CN("冰雪节男爵"), __CN("冠军男爵"), __CN("狂欢男爵"), __CN("MSI男爵"), __CN("奥德赛男爵"), __CN("冠军生日男爵"), __CN("国王系列男爵") }
 		},
 		{
-			"Blue",
+			__CN("蓝Buff"),
 			{ FNV("SRU_Blue") },
-			{ "Blue", "Dark Blue", "Pool Party Blue", "Ruined King Blue" }
+			{ __CN("蓝色[默认]"), __CN("深蓝色"), __CN("泳池派对"), __CN("国王系列")}
 		},
 		{
-			"Red",
+			__CN("红Buff"),
 			{ FNV("SRU_Red") },
-			{ "Red", "Pool Party Red", "Ruined King Red" }
+			{ __CN("红色[默认]"), __CN("泳池派对"), __CN("国王系列") }
 		},
 		{
-			"Scuttle",
+			__CN("河蟹"),
 			{ FNV("Sru_Crab") },
-			{ "Scuttle", "Halloween Light Scuttle", "Halloween Dark Scuttle", "Ruined King Scuttle" }
+			{ __CN("Scuttle[默认]"), __CN("万圣节[亮色]"), __CN("万圣节[暗色]"),  __CN("国王系列") }
 		},
 		{
-			"Krug",
+			__CN("Krug [未知]"),
 			{ FNV("SRU_Krug"), FNV("SRU_KrugMini"), FNV("SRU_KrugMiniMini") },
 			{ "Krug", "Dark Krug" }
 		},
 		{
-			"Razorbeak",
+			__CN("F6鸟皮肤"),
 			{ FNV("SRU_Razorbeak"), FNV("SRU_RazorbeakMini") },
-			{ "Razorbeak", "Chicken Razorbeak" }
+			{ __CN("Razorbeak [默认]"), __CN("冰雪节皮肤") }
 		}
 	};
 

@@ -22,30 +22,30 @@ namespace R3nzSkinInjector {
 		void updateScreen() {
 			while (true) {
 				if (clientState) {
-					this->label4->Text = L"Found";
+					this->label4->Text = L"ÒÑÆô¶¯";
 					this->label4->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 				}
 				else {
-					this->label4->Text = L"Not Found";
+					this->label4->Text = L"Î´Æô¶¯";
 					this->label4->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 				}
 
 				if (gameState) {
-					this->label3->Text = L"Found";
+					this->label3->Text = L"ÒÑÆô¶¯";
 					this->label3->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 					if (cheatState) {
-						this->label2->Text = L"Injected";
+						this->label2->Text = L"ÒÑ×¢Èë";
 						this->label2->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 					}
 					else {
-						this->label2->Text = L"Not Injected";
+						this->label2->Text = L"Î´×¢Èë";
 						this->label2->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 					}
 				}
 				else {
-					this->label3->Text = L"Not Found";
+					this->label3->Text = L"Î´Æô¶¯";
 					this->label3->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
-					this->label2->Text = L"Not Injected";
+					this->label2->Text = L"Î´×¢Èë";
 					this->label2->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 				}
 				Thread::Sleep(1000);
@@ -102,9 +102,9 @@ namespace R3nzSkinInjector {
 				   static_cast<System::Byte>(162)));
 			   this->button1->Location = System::Drawing::Point(12, 13);
 			   this->button1->Name = L"button1";
-			   this->button1->Size = System::Drawing::Size(250, 50);
+			   this->button1->Size = System::Drawing::Size(350, 50);
 			   this->button1->TabIndex = 0;
-			   this->button1->Text = L"Start";
+			   this->button1->Text = L"Æô¶¯";
 			   this->button1->UseVisualStyleBackColor = false;
 			   this->button1->Click += gcnew System::EventHandler(this, &R3nzUI::button1_Click);
 			   // 
@@ -120,7 +120,7 @@ namespace R3nzSkinInjector {
 			   this->label1->Name = L"label1";
 			   this->label1->Size = System::Drawing::Size(68, 18);
 			   this->label1->TabIndex = 1;
-			   this->label1->Text = L"Stopped";
+			   this->label1->Text = L"ÒÑÍ£Ö¹";
 			   // 
 			   // label2
 			   // 
@@ -134,7 +134,7 @@ namespace R3nzSkinInjector {
 			   this->label2->Name = L"label2";
 			   this->label2->Size = System::Drawing::Size(94, 18);
 			   this->label2->TabIndex = 2;
-			   this->label2->Text = L"Not Injected";
+			   this->label2->Text = L"Î´×¢Èë";
 			   // 
 			   // label3
 			   // 
@@ -148,7 +148,7 @@ namespace R3nzSkinInjector {
 			   this->label3->Name = L"label3";
 			   this->label3->Size = System::Drawing::Size(82, 18);
 			   this->label3->TabIndex = 3;
-			   this->label3->Text = L"Not Found";
+			   this->label3->Text = L"Î´Æô¶¯";
 			   // 
 			   // groupBox1
 			   // 
@@ -159,10 +159,10 @@ namespace R3nzSkinInjector {
 			   this->groupBox1->ForeColor = System::Drawing::Color::White;
 			   this->groupBox1->Location = System::Drawing::Point(12, 69);
 			   this->groupBox1->Name = L"groupBox1";
-			   this->groupBox1->Size = System::Drawing::Size(250, 45);
+			   this->groupBox1->Size = System::Drawing::Size(350, 45);
 			   this->groupBox1->TabIndex = 5;
 			   this->groupBox1->TabStop = false;
-			   this->groupBox1->Text = L"Injector Status";
+			   this->groupBox1->Text = L"×¢ÈëÆ÷×´Ì¬";
 			   // 
 			   // groupBox2
 			   // 
@@ -173,10 +173,10 @@ namespace R3nzSkinInjector {
 			   this->groupBox2->ForeColor = System::Drawing::Color::White;
 			   this->groupBox2->Location = System::Drawing::Point(12, 120);
 			   this->groupBox2->Name = L"groupBox2";
-			   this->groupBox2->Size = System::Drawing::Size(250, 45);
+			   this->groupBox2->Size = System::Drawing::Size(350, 45);
 			   this->groupBox2->TabIndex = 7;
 			   this->groupBox2->TabStop = false;
-			   this->groupBox2->Text = L"LeagueClient Status";
+			   this->groupBox2->Text = L"Ó¢ÐÛÁªÃË¿Í»§¶Ë×´Ì¬";
 			   // 
 			   // label4
 			   // 
@@ -190,7 +190,7 @@ namespace R3nzSkinInjector {
 			   this->label4->Name = L"label4";
 			   this->label4->Size = System::Drawing::Size(82, 18);
 			   this->label4->TabIndex = 0;
-			   this->label4->Text = L"Not Found";
+			   this->label4->Text = L"Î´Æô¶¯";
 			   // 
 			   // groupBox3
 			   // 
@@ -201,10 +201,10 @@ namespace R3nzSkinInjector {
 			   this->groupBox3->ForeColor = System::Drawing::Color::White;
 			   this->groupBox3->Location = System::Drawing::Point(12, 171);
 			   this->groupBox3->Name = L"groupBox3";
-			   this->groupBox3->Size = System::Drawing::Size(250, 45);
+			   this->groupBox3->Size = System::Drawing::Size(350, 45);
 			   this->groupBox3->TabIndex = 8;
 			   this->groupBox3->TabStop = false;
-			   this->groupBox3->Text = L"LeagueGame Status";
+			   this->groupBox3->Text = L"Ó¢ÐÛÁªÃËÓÎÏ·×´Ì¬";
 			   // 
 			   // groupBox4
 			   // 
@@ -215,10 +215,10 @@ namespace R3nzSkinInjector {
 			   this->groupBox4->ForeColor = System::Drawing::Color::White;
 			   this->groupBox4->Location = System::Drawing::Point(12, 222);
 			   this->groupBox4->Name = L"groupBox4";
-			   this->groupBox4->Size = System::Drawing::Size(250, 45);
+			   this->groupBox4->Size = System::Drawing::Size(350, 45);
 			   this->groupBox4->TabIndex = 9;
 			   this->groupBox4->TabStop = false;
-			   this->groupBox4->Text = L"R3nzSkin Status";
+			   this->groupBox4->Text = L"R3nzSkin ×´Ì¬";
 			   // 
 			   // linkLabel1
 			   // 
@@ -226,12 +226,12 @@ namespace R3nzSkinInjector {
 			   this->linkLabel1->Cursor = System::Windows::Forms::Cursors::Hand;
 			   this->linkLabel1->LinkBehavior = System::Windows::Forms::LinkBehavior::NeverUnderline;
 			   this->linkLabel1->LinkColor = System::Drawing::Color::Silver;
-			   this->linkLabel1->Location = System::Drawing::Point(20, 274);
+			   this->linkLabel1->Location = System::Drawing::Point(100, 274);
 			   this->linkLabel1->Name = L"linkLabel1";
-			   this->linkLabel1->Size = System::Drawing::Size(207, 14);
+			   this->linkLabel1->Size = System::Drawing::Size(350, 50);
 			   this->linkLabel1->TabIndex = 11;
 			   this->linkLabel1->TabStop = true;
-			   this->linkLabel1->Text = L"Copyright (c) 2021-2023 R3nzTheCodeGOD";
+			   this->linkLabel1->Text = L"Copyright (c) 2023 By Ð¡²Ìºº»¯";
 			   this->linkLabel1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			   this->linkLabel1->LinkClicked += gcnew System::Windows::Forms::LinkLabelLinkClickedEventHandler(this, &R3nzUI::linkLabel1_LinkClicked);
 			   //
@@ -243,10 +243,10 @@ namespace R3nzSkinInjector {
 			   // menuItem
 			   //
 			   this->menuItem2->Index = 0;
-			   this->menuItem2->Text = L"Start";
+			   this->menuItem2->Text = L"Æô¶¯";
 			   this->menuItem2->Click += gcnew System::EventHandler(this, &R3nzUI::menuItem2_OnClick);
 			   this->menuItem->Index = 1;
-			   this->menuItem->Text = L"Exit";
+			   this->menuItem->Text = L"ÍË³ö";
 			   this->menuItem->Click += gcnew System::EventHandler(this, &R3nzUI::menuItem_OnClick);
 			   //
 			   // notifyIcon
@@ -263,7 +263,7 @@ namespace R3nzSkinInjector {
 			   this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			   this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(32)), static_cast<System::Int32>(static_cast<System::Byte>(30)),
 				   static_cast<System::Int32>(static_cast<System::Byte>(30)));
-			   this->ClientSize = System::Drawing::Size(273, 297);
+			   this->ClientSize = System::Drawing::Size(373, 297);
 			   this->Controls->Add(this->linkLabel1);
 			   this->Controls->Add(this->groupBox4);
 			   this->Controls->Add(this->groupBox3);
@@ -278,7 +278,7 @@ namespace R3nzSkinInjector {
 			   this->MaximizeBox = false;
 			   this->Name = L"R3nzUI";
 			   this->RightToLeft = System::Windows::Forms::RightToLeft::No;
-			   this->Text = L"R3nzSkin";
+			   this->Text = L"R3nzSkin By Ð¡²Ìºº»¯";
 			   this->Load += gcnew System::EventHandler(this, &R3nzUI::R3nzUI_Load);
 			   this->Resize += gcnew System::EventHandler(this, &R3nzUI::R3nzUI_Resize);
 			   this->groupBox1->ResumeLayout(false);
@@ -311,21 +311,21 @@ namespace R3nzSkinInjector {
 			if (btnState) {
 				this->button1->BackColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
 				this->label1->ForeColor = System::Drawing::Color::FromArgb(255, 252, 220, 107);
-				this->button1->Text = L"Stop";
-				this->label1->Text = L"Working";
-				this->menuItem2->Text = L"Stop";
+				this->button1->Text = L"Í£Ö¹";
+				this->label1->Text = L"ÔËÐÐÖÐ";
+				this->menuItem2->Text = L"Í£Ö¹";
 			} else {
 				this->button1->BackColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
 				this->label1->ForeColor = System::Drawing::Color::FromArgb(255, 245, 8, 83);
-				this->button1->Text = L"Start";
-				this->label1->Text = L"Stopped";
-				this->menuItem2->Text = L"Start";
+				this->button1->Text = L"Æô¶¯";
+				this->label1->Text = L"ÒÑÍ£Ö¹";
+				this->menuItem2->Text = L"Æô¶¯";
 			}
 		}
 	private:
 		System::Void linkLabel1_LinkClicked(System::Object^ sender, System::Windows::Forms::LinkLabelLinkClickedEventArgs^ e)
 		{
-			System::Diagnostics::Process::Start(L"https://github.com/R3nzTheCodeGOD/R3nzSkin");
+			//System::Diagnostics::Process::Start(L"https://github.com/R3nzTheCodeGOD/R3nzSkin");
 		}
 	private:
 		System::Void R3nzUI_Resize(System::Object^ sender, System::EventArgs^ e)

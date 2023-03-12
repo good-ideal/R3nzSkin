@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32922.545
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "R3nzSkin", "R3nzSkin\R3nzSkin.vcxproj", "{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}"
 EndProject
@@ -22,16 +22,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PythonScripts", "PythonScri
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		ChinaServer|Win32 = ChinaServer|Win32
 		ChinaServer|x86 = ChinaServer|x86
+		RiotGamesServers|Win32 = RiotGamesServers|Win32
 		RiotGamesServers|x86 = RiotGamesServers|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.ChinaServer|Win32.ActiveCfg = ChinaServer|Win32
+		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.ChinaServer|Win32.Build.0 = ChinaServer|Win32
 		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.ChinaServer|x86.ActiveCfg = ChinaServer|Win32
 		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.ChinaServer|x86.Build.0 = ChinaServer|Win32
+		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.RiotGamesServers|Win32.ActiveCfg = RiotGamesServers|Win32
+		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.RiotGamesServers|Win32.Build.0 = RiotGamesServers|Win32
 		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.RiotGamesServers|x86.ActiveCfg = RiotGamesServers|Win32
 		{17B6E7A6-AA76-4C09-B2AA-E2055EF748D2}.RiotGamesServers|x86.Build.0 = RiotGamesServers|Win32
+		{40F6875E-C1E5-4C10-A129-6E84CE034801}.ChinaServer|Win32.ActiveCfg = ChinaServer|Win32
+		{40F6875E-C1E5-4C10-A129-6E84CE034801}.ChinaServer|Win32.Build.0 = ChinaServer|Win32
 		{40F6875E-C1E5-4C10-A129-6E84CE034801}.ChinaServer|x86.ActiveCfg = ChinaServer|Win32
 		{40F6875E-C1E5-4C10-A129-6E84CE034801}.ChinaServer|x86.Build.0 = ChinaServer|Win32
+		{40F6875E-C1E5-4C10-A129-6E84CE034801}.RiotGamesServers|Win32.ActiveCfg = RiotGamesServers|Win32
+		{40F6875E-C1E5-4C10-A129-6E84CE034801}.RiotGamesServers|Win32.Build.0 = RiotGamesServers|Win32
 		{40F6875E-C1E5-4C10-A129-6E84CE034801}.RiotGamesServers|x86.ActiveCfg = RiotGamesServers|Win32
 		{40F6875E-C1E5-4C10-A129-6E84CE034801}.RiotGamesServers|x86.Build.0 = RiotGamesServers|Win32
 	EndGlobalSection

@@ -28,24 +28,24 @@ public:
 
     void draw() noexcept
     {
-        if (ImGui::BeginPopup("Options")) {
+        if (ImGui::BeginPopup(__CN("选项"))) {
             ImGui::Checkbox("Auto-scroll", &this->autoScroll);
             ImGui::EndPopup();
         }
 
-        if (ImGui::Button("Options"))
+        if (ImGui::Button(__CN("选项")))
             ImGui::OpenPopup("Options");
 
         ImGui::SameLine();
-        if (ImGui::Button("Clear"))
+        if (ImGui::Button(__CN("清除")))
             this->clear();
 
         ImGui::SameLine();
-        if (ImGui::Button("Copy"))
+        if (ImGui::Button(__CN("复制")))
             ImGui::LogToClipboard();
 
         ImGui::SameLine();
-        filter.Draw("Filter", -100.0f);
+        filter.Draw(__CN("过滤"), -100.0f);
 
         ImGui::Separator();
         ImGui::BeginChild("scrolling", ImVec2(0, 0), false, ImGuiWindowFlags_HorizontalScrollbar);
@@ -86,5 +86,5 @@ private:
     ImGuiTextBuffer buffer;
     ImGuiTextFilter filter;
     ImVector<int> lineOffsets;
-    bool autoScroll{ true };
+    bool autoScroll{ false };
 };

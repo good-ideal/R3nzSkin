@@ -4,3 +4,4 @@
 #define IMGUI_DISABLE_METRICS_WINDOW
 #define IMGUI_IMPL_WIN32_DISABLE_GAMEPAD
 #define IMGUI_DISABLE_OBSOLETE_FUNCTIONS
+#define __CN(str) (const char*)u8##str
